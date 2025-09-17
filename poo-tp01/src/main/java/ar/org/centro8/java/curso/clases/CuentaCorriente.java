@@ -61,7 +61,7 @@ public class CuentaCorriente extends Cuenta{
      * método para guardar los cheques depositados
      * “Uso un bucle for-each para recorrer la lista chequesDepositados.
      * Cada vez que pasa por el bucle, la variable cheque representa un elemento de esa lista.
-     * De esa forma puedo acceder a los datos de cada cheque sin usar un índice manual.”
+     * De esa forma se accede a los datos de cada cheque sin usar un índice manual.”
      */
     public void mostrarChequesDepositados() {
         if (chequesDepositados.isEmpty()) {
@@ -79,3 +79,4 @@ public class CuentaCorriente extends Cuenta{
 
 
 }
+
