@@ -24,12 +24,12 @@ public class TestSistemaBancario {
         System.out.println(clienteInd1);                        //consulta los datos del cliente
         System.out.println(clienteInd1.getNumeroCliente());     //consulta solo el número de cliente
         System.out.println(cuentaCajaAhorro1.getSaldo());       //consulta saldo de la cuenta del cliente1
-        cuentaCajaAhorro1.depositarEfectivo(100000);      //depositar en la cuenta
+        cuentaCajaAhorro1.depositarEfectivo(100000);            //depositar en la cuenta
         System.out.println(cuentaCajaAhorro1.getSaldo());       //consultar el saldo de la cuenta
-        cuentaCajaAhorro1.extraerEfectivo(50000);         //extraer de la cuenta
+        cuentaCajaAhorro1.extraerEfectivo(50000);               //extraer de la cuenta
         System.out.println(cuentaCajaAhorro1.getSaldo());       //consultar el saldo de la cuenta
         System.out.println(cuentaCajaAhorro1);                  //consultar los datos de la cuenta
-        cuentaCajaAhorro1.cobrarInteres(4);         //cobrar interes
+        cuentaCajaAhorro1.cobrarInteres(4);                     //cobrar interes
         System.out.println(cuentaCajaAhorro1.getSaldo());       //consultar el saldo
 
         System.out.println("** Creación de primer cliente empresa **");
@@ -43,14 +43,14 @@ public class TestSistemaBancario {
         System.out.println(cuentaCorr1);
         cuentaCorr1.depositarEfectivo(100000);
         System.out.println(cuentaCorr1.getSaldo());
-        cuentaCorr1.extraerEfectivo(200000); //Monto de extracción excede el monto autorizado.
+        cuentaCorr1.extraerEfectivo(200000);             //Monto de extracción excede el monto autorizado.
         cuentaCorr1.extraerEfectivo(100000);
         System.out.println(cuentaCorr1.getSaldo());
-        cuentaCorr1.extraerEfectivo(49000);  //Extracción realzada con éxito.
+        cuentaCorr1.extraerEfectivo(49000);              //Extracción realzada con éxito.
         System.out.println(cuentaCorr1.getSaldo());
-        cuentaCorr1.extraerEfectivo(2);      //Extracción realizada con éxito = 49002.0
+        cuentaCorr1.extraerEfectivo(2);                  //Extracción realizada con éxito = 49002.0
         System.out.println(cuentaCorr1.getSaldo());
-        cuentaCorr1.extraerEfectivo(999);    //Monto de Extracción excede el monto autorizado.
+        cuentaCorr1.extraerEfectivo(999);                //Monto de Extracción excede el monto autorizado.
         
         Cheque cheque1 = new Cheque(50000, "Banco Coban", LocalDate.of(2025, 9, 18));
         cuentaCorr1.depositarCheque(cheque1);
@@ -93,10 +93,11 @@ public class TestSistemaBancario {
         cuentaConv1.mostrarChequesDepositados();
         //Consulta: la clase CuentaConvertibilidad tiene el método depositarCheque, sin embargo, no me queda claro si está llamando al método depositarCheque de la clase
         //CuentaCorriente, porque lo está guardando también en mostrarChequesDepositados, y este último no lo puse en CuentaConvertibilidad.
-        //Creo que es porque el método que usé es el que tiene el parámetro(cheque3)...el que usé en CuentaConvertibilidad quedó con el parámetro(monto)
+        //Creo que esto pasó porque el método que usé es el que tiene el parámetro(cheque3)...Por otro lado, el que está en CuentaConvertibilidad tiene el parámetro(monto).
 
         
 
 
     }
 }
+
