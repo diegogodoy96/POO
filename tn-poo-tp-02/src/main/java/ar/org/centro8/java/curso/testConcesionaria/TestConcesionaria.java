@@ -9,10 +9,10 @@ import ar.org.centro8.java.curso.clases.Vehiculo;
 
 public class TestConcesionaria {
     public static void main(String[] args) {
-        Vehiculo auto1 = new Automovil("Peugeot", "206", "4", 200000.00);
-        Vehiculo moto1 = new Motocicleta("Honda", "Titan", "125c", 60000.00);
-        Vehiculo auto2 = new Automovil("Peugeot", "208", "5", 250000.00);
-        Vehiculo moto2 = new Motocicleta("Yamaha", "YBR", "160c", 80500.50);
+        Vehiculo auto1 = new Automovil("Peugeot", "206", "4", 200000.00);        //falta formatear precio
+        Vehiculo moto1 = new Motocicleta("Honda", "Titan", "125c", 60000.00);    //falta formatear precio
+        Vehiculo auto2 = new Automovil("Peugeot", "208", "5", 250000.00);        //falta formatear precio
+        Vehiculo moto2 = new Motocicleta("Yamaha", "YBR", "160c", 80500.50);     //falta formatear precio
         //creación de nuevo listado
         ListadoVehiculo listadoVehiculo = new ListadoVehiculo(new ArrayList<>()); 
         listadoVehiculo.agregarObjetosAlListado(auto1,moto1,auto2,moto2);
@@ -31,3 +31,4 @@ public class TestConcesionaria {
 
     }
 }
+
