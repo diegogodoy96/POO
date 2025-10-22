@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 public class Automovil extends Vehiculo{
     private String puertas;
 
-    public Automovil(String marca, String modelo, String puertas, Double precio) {
+    public Automovil(String marca, String modelo, String puertas, double precio) {
         super(marca, modelo, precio);
         this.puertas = puertas;
     }
@@ -20,3 +20,4 @@ public class Automovil extends Vehiculo{
         return "Marca: " + getMarca() + " // Modelo: " + getModelo() + " // Puertas: " + puertas + " // Precio: $" + getPrecio();
     }
 }
+
