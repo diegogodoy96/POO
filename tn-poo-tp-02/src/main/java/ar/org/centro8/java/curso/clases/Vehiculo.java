@@ -8,7 +8,7 @@ import lombok.Data;
 public abstract class Vehiculo implements Comparable<Vehiculo>{
     private String marca;
     private String modelo;
-    private Double precio;
+    private double precio;
 
     //Compara el objeto con un objeto específico por orden.
     //Retorna un entero negativo, cero, o un entero positivo.
@@ -19,4 +19,5 @@ public abstract class Vehiculo implements Comparable<Vehiculo>{
         return vehiculoOriginal.compareTo(vehiculoAComparar);
     }
 }
+
 
